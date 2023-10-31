@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="stylesheet" href="./styles/globals.css">
+  <script src="./app.js" async defer></script>
+</head>
+
+<body>
+
+  <div class="main">
+    <div>
+      <header class="header">
+        <div class="container">
+          <a class="logo-container" href="javascript:;">
+            <img src="./assets/images/logo.svg" alt="Logo" width="65" height="40" />
+          </a>
+
+          <div id="mobilenav-overlay"></div>
+
+          <button aria-expanded="false" aria-controls="navbar" class="hide-on-desktop" type="button"
+            aria-label="openmobile nav" id="opennav">
+            <img src="./assets/images/icon-menu.svg" alt="Menu Icon" width="40" height="17" />
+          </button>
+
+          <div id="navbar" class="list-of-links-wrapper">
+            <button class="hide-on-desktop" type="button" aria-label="close mobile nav" id="closenav">
+              <img src="./assets/images/icon-menu-close.svg" alt="Close Icon" width="32" height="31" />
+            </button>
+            <ul class="list-of-links">
+              <li>
+                <a href="javascript:;"> Home</a>
+              </li>
+              <li>
+                <a href="javascript:;"> New</a>
+              </li>
+              <li>
+                <a href="javascript:;"> Popular</a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  Trending</a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="container featured">
+          <h1 class="sr-only">Featured Section</h1>
+
+
+          <figure class="main-featured">
+            <picture>
+              <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)">
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="Featured News Cover Image" width="850px"
+                height="650px" />
+            </picture>
+
+            <div class="main-featured-info">
+              <h2 class="big">
+                <strong>The Bright Future of Web 3.0?</strong>
+              </h2>
+
+              <div class="main-featured-description">
+                <p>
+                  We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                  hands of the
+                  people.
+                  But is it really fulfilling its promise?
+                </p>
+
+                <a href="javascript:;" class="primary-btn">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </figure>
+
+          <section class="new-section-wrapper">
+            <h2>NEW</h2>
+
+            <div class="new-section">
+              <article>
+                <h3>
+                  Hydrogen VS Electric Cars
+                </h3>
+                <p>
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+              <hr />
+              <article>
+                <h3>
+                  The Downsides of AI Artistry
+                </h3>
+                <p>
+                  What are the possible adverse effects of on-demand AI image generation?
+                </p>
+              </article>
+              <hr />
+              <article>
+                <h3>
+                  Is VC Funding Drying Up?
+                </h3>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-of-news">
+            <h2 class="sr-only">Section of news</h2>
+
+            <div class="news-card">
+              <div class="portrait">
+                <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs cover image" width="125" height="200" />
+              </div>
+              <div class="news-description">
+                <div class="big">01</div>
+                <h3>Reviving Retro PCs</h3>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <div class="portrait">
+                <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops cover image" width="125"
+                  height="200" />
+              </div>
+              <div class="news-description">
+                <div class="big">02</div>
+                <h3>
+                  Top 10 Laptops of 2022</h3>
+                <p>
+                  Our best picks for various needs and budgets.</p>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <div class="portrait">
+                <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth cover image" width="125"
+                  height="200" />
+              </div>
+              <div class="news-description">
+                <div class="big">03</div>
+                <h3>
+                  The Growth of Gaming</h3>
+                <p>
+                  How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+
+</html>
