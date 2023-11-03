@@ -424,3 +424,23 @@ hr {
 
     margin-bottom: 0.25rem;
 }
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap {
+    gap: 0.875rem;
+}
+
+.gap-half {
+    gap: 0.5rem;
+}
